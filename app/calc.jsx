@@ -2,7 +2,7 @@ import { View, TouchableOpacity, Text, StyleSheet } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import IonIcons from "react-native-vector-icons/Ionicons";
 
-export default function ProfileScreen() {
+export default function Calculator() {
   const navigation = useNavigation();
   return (
     <View style={styles.container}>
@@ -16,18 +16,8 @@ export default function ProfileScreen() {
       <View style={styles.content}>
         <Text style={styles.title}>Calculadora</Text>
         <View style={styles.buttonsGrid}>
-          <TouchableOpacity style={styles.numberButton} value={1} id="numberButton"></TouchableOpacity>
-          <TouchableOpacity style={styles.numberButton} value={2} id="numberButton"></TouchableOpacity>
-          <TouchableOpacity style={styles.numberButton} value={3} id="numberButton"></TouchableOpacity>
-          <TouchableOpacity style={styles.numberButton} value={4} id="numberButton"></TouchableOpacity>
-          <TouchableOpacity style={styles.numberButton} value={5} id="numberButton"></TouchableOpacity>
-          <TouchableOpacity style={styles.numberButton} value={6} id="numberButton"></TouchableOpacity>
-          <TouchableOpacity style={styles.numberButton} value={7} id="numberButton"></TouchableOpacity>
-          <TouchableOpacity style={styles.numberButton} value={8} id="numberButton"></TouchableOpacity>
-          <TouchableOpacity style={styles.numberButton} value={9} id="numberButton"></TouchableOpacity>
-          <TouchableOpacity style={styles.numberButton} value={0} id="numberButton"></TouchableOpacity>
         </View>
-        <Text style={styles.welcomeText2}>Telinha de home</Text>
+        <Text style={styles.welcomeText2}>Página de Vitu de Lira</Text>
       </View>
     </View>
   );
@@ -42,6 +32,14 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     color: "purple",
     marginTop: 50,
+  },
+  numberButton: {
+    width: 30,
+    height: 30,
+    backgroundColor: "purple",
+    fontSize: 18,
+    justifyContent: "center",
+    alignItems: "center",
   },
   button: {
     padding: 20,
