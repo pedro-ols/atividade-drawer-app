@@ -79,7 +79,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     backgroundColor: "#ffff",
     width: "100%",
-    height: 220,
+    height: 270,
   },
   menuButton: {
     padding: 20,
