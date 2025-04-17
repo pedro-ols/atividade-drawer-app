@@ -12,7 +12,7 @@ export default function Layout({}) {
             title: "Início",
             drawerLabel: "Início",
             headerShown: false,
-            headerLeft: false,
+            // headerLeft: false,
             drawerIcon: ({ size, color }) => (
               <IonIcons name="home" size={size} color={color} />
             ),
@@ -24,12 +24,25 @@ export default function Layout({}) {
             title: "Calculadora",
             drawerLabel: "Calculadora", 
             headerShown: false,
-            headerLeft: false,
+            // headerLeft: false,
             drawerIcon: ({ size, color }) => (
               <IonIcons name="person" size={size} color={color} />
             ),
           }}
         />
+
+        <Drawer.Screen
+        name="contador"
+        options={{
+          title: "Contador",
+          drawerLabel: "Contador",
+          headerShown: false,
+          headerLeft: false,
+          drawerIcon: ({ size, color }) => (
+            <IonIcons name="logo-android" size={size} color={color} />
+          ),
+        }}
+      />
       </Drawer>
     </GestureHandlerRootView>
   );
