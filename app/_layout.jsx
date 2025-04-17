@@ -19,10 +19,11 @@ export default function Layout({}) {
           }}
         />
         <Drawer.Screen
-          name="profile"
+          name="calc"
           options={{
-            title: "Profile",
-            drawerLabel: "Seu Perfil", 
+            title: "Calculadora",
+            drawerLabel: "Calculadora", 
+            headerShown: false,
             headerLeft: false,
             drawerIcon: ({ size, color }) => (
               <IonIcons name="person" size={size} color={color} />
